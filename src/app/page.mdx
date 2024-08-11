@@ -1,0 +1,22 @@
+import { PAGE_DESCRIPTION, OG_IMAGE, TITLE } from "@/app/utils/constants";
+import { Grid } from "cherry-styled-components/src/lib";
+import { Box } from "@/app/components/box";
+
+export const metadata = {
+  title: "Docs - " + TITLE,
+  description: PAGE_DESCRIPTION,
+  openGraph: {
+    title: "Docs - " + TITLE,
+    description: PAGE_DESCRIPTION,
+    images: OG_IMAGE,
+  },
+};
+
+# Introduction
+
+Welcome to the VIDEOJOBS documentation. Here you will find everything you need to know about creating an account, creating Job Ads, and embedding on job boards, or other websites.
+
+<Grid $xsCols={1} $lgCols={2}>
+  <Box $title="Create an Account" $text="Sign up" href="/create-account" />
+  <Box $title="Company Profile" $text="Create your company profile" href="/company-profile" />
+</Grid>

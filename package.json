@@ -1,0 +1,46 @@
+{
+  "name": "vj-docs",
+  "version": "0.0.1",
+  "private": false,
+  "author": "Luan Gjokaj <luan@riangle.com>",
+  "homepage": "https://cherry.design",
+  "repository": "https://github.com/cherry-design-system/documentation",
+  "license": "MIT",
+  "keywords": [
+    "cherry",
+    "react",
+    "components",
+    "css",
+    "framework",
+    "design",
+    "design system",
+    "styled-components"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write \"./src/**/*.{js,json,ts,tsx}\" \"!.node_modules/**\""
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@docsearch/react": "^3.6.1",
+    "@mdx-js/loader": "^3.0.1",
+    "@next/mdx": "^14.2.5",
+    "@types/node": "^22",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "cherry-styled-components": "^0.1.0-37",
+    "eslint-config-next": "^14.2.5",
+    "polished": "^4.3.1",
+    "prettier": "^3.3.3",
+    "rehype-highlight": "^7.0.0",
+    "styled-components": "^6.1.12",
+    "typescript": "^5"
+  }
+}
