@@ -4,7 +4,12 @@ import styled, { css } from "styled-components";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Theme, mq, resetButton, styledStrong, Space } from "cherry-styled-components/src/lib";
-import { docsIntroNav, docsJobCreationNav, docsIntegrationsNav } from "@/app/navs/documentation";
+import {
+  docsIntroNav,
+  docsJobCreationNav,
+  docsIntegrationsNav,
+  docsAccountManagementNav,
+} from "@/app/navs/documentation";
 import { rgba } from "polished";
 
 interface Props {
@@ -235,6 +240,24 @@ function Sidebar() {
             <Space $size={20} />
           </StyledSidebarListItem>
           {docsIntegrationsNav.map((item, index) => {
+            return (
+              <StyledSidebarListItem key={index}>
+                <StyledSidebarListItemLink
+                  href={item.url}
+                  $isActive={pathname === item.url}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.title}
+                </StyledSidebarListItemLink>
+              </StyledSidebarListItem>
+            );
+          })}
+          <StyledSidebarListItem>
+            <Space $size={20} />
+            <StyledStrong>Account Management</StyledStrong>
+            <Space $size={20} />
+          </StyledSidebarListItem>
+          {docsAccountManagementNav.map((item, index) => {
             return (
               <StyledSidebarListItem key={index}>
                 <StyledSidebarListItemLink

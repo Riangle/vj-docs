@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Flex, Theme, styledH5, styledStrong } from "cherry-styled-components/src/lib";
+import { Flex, Theme, styledH5, styledStrong, styledText } from "cherry-styled-components/src/lib";
 import styled, { css } from "styled-components";
 import Link from "next/link";
 import { StyledIcon } from "./icon-link";
@@ -90,6 +90,7 @@ const StyledSmallerTitle = styled(StyledTitle)`
 
 const StyledText = styled.span<StyledBoxProps>`
   color: ${({ theme }) => (theme.isDark ? theme.colors.grayDark : theme.colors.dark)};
+  ${({ theme }) => styledText(theme)};
   margin: 0;
   padding: 10px 0 0 0;
   display: block;

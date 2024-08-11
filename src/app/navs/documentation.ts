@@ -93,3 +93,31 @@ export const docsIntegrationsNav = [
   },
   { title: "Embed Image Blocks", url: "/embed-image-blocks", icon: "" },
 ];
+
+export const docsAccountManagementNav = [
+  {
+    title: "Account Settings",
+    url: "/account-settings",
+    icon: "",
+  },
+  {
+    title: "Team Accounts",
+    url: "/team-accounts",
+    icon: "",
+  },
+  {
+    title: "Billing",
+    url: "/billing",
+    icon: "",
+  },
+  {
+    title: "Security",
+    url: "/security",
+    icon: "",
+  },
+  {
+    title: "Support",
+    url: "/support",
+    icon: "",
+  },
+];

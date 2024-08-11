@@ -84,8 +84,8 @@ const StyledContent = styled.div<ContentProps>`
 
   & a:not([class]) {
     color: ${({ theme }) => theme.colors.primary};
-    font-weight: 500;
-    text-decoration: underline;
+    font-weight: 600;
+    text-decoration: none;
     transition: all 0.3s ease;
 
     @media (hover: hover) {
