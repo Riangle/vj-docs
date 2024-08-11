@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { mq, styledSmall, Col, Grid } from "cherry-styled-components/src/lib";
 import { usePathname } from "next/navigation";
 import { Theme } from "cherry-styled-components/src/lib";
-import { TITLE } from "../utils/constants";
+import { TITLE } from "@/app/utils/constants";
 
 function DocsFooter() {
   const year = new Date().getFullYear();
@@ -44,7 +44,8 @@ function DocsFooter() {
       <Grid $xsCols={1} $lgCols={3}>
         <Col $lgSpan={2}>
           <StyledParagraph>
-            Copyright © {year} {TITLE}. All rights reserved.
+            Copyright © {year} <StyledLink href="https://www.videojobs.io">{TITLE}</StyledLink>.
+            All rights reserved.
           </StyledParagraph>
         </Col>
         <StyledLink
