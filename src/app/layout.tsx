@@ -7,6 +7,7 @@ import { theme, themeDark } from "@/app/theme";
 import { Sidebar } from "@/app/components/sidebar";
 import { Content } from "@/app/components/content";
 import { DocsFooter } from "@/app/components/footer";
+import { CSPostHogProvider } from "@/app/components/posthog-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,16 +21,18 @@ export default function RootLayout({
       <body className={inter.className}>
         <StyledComponentsRegistry>
           <CherryThemeProvider theme={theme} themeDark={themeDark}>
-            <MinHeight>
-              <Header />
-              <Container $fluid>
-                <Sidebar />
-                <MaxWidth $lg={600}>
-                  <Content>{children}</Content>
-                  <DocsFooter />
-                </MaxWidth>
-              </Container>
-            </MinHeight>
+            <CSPostHogProvider>
+              <MinHeight>
+                <Header />
+                <Container $fluid>
+                  <Sidebar />
+                  <MaxWidth $lg={600}>
+                    <Content>{children}</Content>
+                    <DocsFooter />
+                  </MaxWidth>
+                </Container>
+              </MinHeight>
+            </CSPostHogProvider>
           </CherryThemeProvider>
         </StyledComponentsRegistry>
       </body>

@@ -28,8 +28,49 @@ export const docsJobCreationNav = [
     icon: "",
   },
   {
-    title: "Create Reusable Blocks",
-    url: "/create-reusable-blocks",
+    title: "Text Block",
+    url: "/text-block",
+    icon: "",
+  },
+  {
+    title: "Image Block",
+    url: "/image-block",
+    icon: "",
+  },
+  {
+    title: "Video Block",
+    url: "/video-block",
+    icon: "",
+  },
+  {
+    title: "Button Block",
+    url: "/button-block",
+    icon: "",
+  },
+  {
+    title: "Benefits Block",
+    url: "/benefits-block",
+    icon: "",
+  },
+
+  {
+    title: "Team Block",
+    url: "/team-block",
+    icon: "",
+  },
+  {
+    title: "Contact Person Block",
+    url: "/contact-person-block",
+    icon: "",
+  },
+  {
+    title: "Location Block",
+    url: "/location-block",
+    icon: "",
+  },
+  {
+    title: "Reusable Blocks",
+    url: "/reusable-blocks",
     icon: "",
   },
 ];
