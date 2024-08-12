@@ -1,0 +1,28 @@
+import { PAGE_DESCRIPTION, OG_IMAGE, TITLE } from "@/app/utils/constants";
+import { Grid, Space } from "cherry-styled-components/src/lib";
+import { Box } from "@/app/components/box";
+import { LinkButton } from "@/app/components/link-button";
+
+export const metadata = {
+  title: "Create an Account - " + TITLE,
+  description: PAGE_DESCRIPTION,
+  openGraph: {
+    title: "Create an Account - " + TITLE,
+    description: PAGE_DESCRIPTION,
+    images: OG_IMAGE,
+  },
+};
+
+# Create an Account
+This page will guide you through the process of creating an account on [VIDEOJOBS](https://www.videojobs.io).
+
+To get started, please go to the [VIDEOJOBS](https://www.videojobs.io) home and click on the **Sign Up** in the top right corner.
+
+<LinkButton href="https://www.videojobs.io/register" target="_blank">Sign Up</LinkButton>
+
+<Space $size={20} />
+
+<Grid $xsCols={1} $lgCols={2}>
+  <Box $title="Create an Account" $text="Let’s get started by creating an account." href="/create-account" />
+  <Box $title="Company Profile" $text="Learn more about your company profile." href="/company-profile" />
+</Grid>

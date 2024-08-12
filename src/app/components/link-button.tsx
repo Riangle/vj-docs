@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import styled from "styled-components";
 import { theme as localTheme, ButtonProps, buttonStyles } from "cherry-styled-components/src/lib";

@@ -24,53 +24,53 @@ export const docsIntroNav = [
 export const docsJobCreationNav = [
   {
     title: "Create a Job Ad",
-    url: "/create-job-ad",
+    url: "/creation/create-job-ad",
     icon: "",
   },
   {
     title: "Text Block",
-    url: "/text-block",
+    url: "/creation/text-block",
     icon: "",
   },
   {
     title: "Image Block",
-    url: "/image-block",
+    url: "/creation/image-block",
     icon: "",
   },
   {
     title: "Video Block",
-    url: "/video-block",
+    url: "/creation/video-block",
     icon: "",
   },
   {
     title: "Button Block",
-    url: "/button-block",
+    url: "/creation/button-block",
     icon: "",
   },
   {
     title: "Benefits Block",
-    url: "/benefits-block",
+    url: "/creation/benefits-block",
     icon: "",
   },
 
   {
     title: "Team Block",
-    url: "/team-block",
+    url: "/creation/team-block",
     icon: "",
   },
   {
     title: "Contact Person Block",
-    url: "/contact-person-block",
+    url: "/creation/contact-person-block",
     icon: "",
   },
   {
     title: "Location Block",
-    url: "/location-block",
+    url: "/creation/location-block",
     icon: "",
   },
   {
     title: "Reusable Blocks",
-    url: "/reusable-blocks",
+    url: "/creation/reusable-blocks",
     icon: "",
   },
 ];
@@ -78,46 +78,46 @@ export const docsJobCreationNav = [
 export const docsIntegrationsNav = [
   {
     title: "Embed on Job Boards",
-    url: "/embed-on-job-boards",
+    url: "/integrations/embed-on-job-boards",
     icon: "",
   },
   {
     title: "Embed open positions",
-    url: "/embed-open-positions",
+    url: "/integrations/embed-open-positions",
     icon: "",
   },
   {
     title: "Embed Video Blocks",
-    url: "/embed-video-blocks",
+    url: "/integrations/embed-video-blocks",
     icon: "",
   },
-  { title: "Embed Image Blocks", url: "/embed-image-blocks", icon: "" },
+  { title: "Embed Image Blocks", url: "/integrations/embed-image-blocks", icon: "" },
 ];
 
 export const docsAccountManagementNav = [
   {
     title: "Account Settings",
-    url: "/account-settings",
+    url: "/account/account-settings",
     icon: "",
   },
   {
     title: "Team Accounts",
-    url: "/team-accounts",
+    url: "/account/team-accounts",
     icon: "",
   },
   {
     title: "Billing",
-    url: "/billing",
+    url: "/account/billing",
     icon: "",
   },
   {
     title: "Security",
-    url: "/security",
+    url: "/account/security",
     icon: "",
   },
   {
     title: "Support",
-    url: "/support",
+    url: "/account/support",
     icon: "",
   },
 ];
