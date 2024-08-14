@@ -1,0 +1,53 @@
+import { PAGE_DESCRIPTION, OG_IMAGE, TITLE } from "@/app/utils/constants";
+import { Grid, Space } from "cherry-styled-components/src/lib";
+import { Box } from "@/app/components/box";
+import { LinkButton } from "@/app/components/link-button";
+
+export const metadata = {
+  title: "Company Profile - " + TITLE,
+  description: PAGE_DESCRIPTION,
+  openGraph: {
+    title: "Company Profile - " + TITLE,
+    description: PAGE_DESCRIPTION,
+    images: OG_IMAGE,
+  },
+};
+
+# Company Profile
+Once you have filled your company profile, you can start posting job ads instantly. To do this, you need to create a job ad. You can create a job ad by clicking on the **Create Job Ad** button on the top right corner of the page.
+
+```
+https://www.videojobs.io/company-page-url
+```
+
+The company profile can be used as a canvas to showcase your company’s culture, values, and mission. It shows the collection of job ads that are posted by the company.
+![Company Profile](/company-profile.jpg)
+
+The following information can be changed from the [Account](/account/account-page) page:
+
+ - Company Profile Image
+ - Company Name
+ - Company Page URL
+ - Company Website
+ - Location
+ - Team Size
+ - Bio
+ - Mission
+
+ You can edit the Company Profile by clicking the **Edit** button on the bottom right corner of the page.
+ The Company Profile, same as the Job Ads, can be personalized to your company's needs using the VIDEOJOBS Blocks.
+
+ - [Text Block](/creation/text-block)
+ - [Image Block](/creation/image-block)
+ - [Video Block](/creation/video-block)
+ - [Button Block](/creation/button-block)
+ - [Benefits Block](/creation/benefits-block)
+ - [Team Block](/creation/team-block)
+ - [Contact Person Block](/creation/contact-person-block)
+ - [Location Block](/creation/location-block)
+ - [Reusable Blocks](/creation/reusable-blocks)
+
+<Grid $xsCols={1} $lgCols={2}>
+  <Box $title="Company Profile" $text="Learn more about your company profile." href="/company-profile" />
+  <Box $title="Job Ads" $text="Learn more about creating job ads, with all its features." href="/job-ads" />
+</Grid>

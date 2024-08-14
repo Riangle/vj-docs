@@ -96,8 +96,8 @@ export const docsIntegrationsNav = [
 
 export const docsAccountManagementNav = [
   {
-    title: "Account Settings",
-    url: "/account/account-settings",
+    title: "Account",
+    url: "/account/account-page",
     icon: "",
   },
   {
