@@ -1,0 +1,95 @@
+import { PAGE_DESCRIPTION, OG_IMAGE, TITLE } from "@/app/utils/constants";
+import Link from "next/link";
+import { Grid, Space, Button, Flex } from "cherry-styled-components/src/lib";
+import { Box } from "@/app/components/box";
+import { LinkButton } from "@/app/components/link-button";
+import { Icon } from "@/app/components/icon-component";
+import { StyledDataArrowButton, StyledDataUserAvatar, StyledDataDropdownButton, StyledDataCreateButton, StyledDataDropdown, StyledDataDropdownItem } from "@/app/components/data-components";
+
+export const metadata = {
+  title: "Create a Block - " + TITLE,
+  description: PAGE_DESCRIPTION,
+  openGraph: {
+    title: "Create a Block - " + TITLE,
+    description: PAGE_DESCRIPTION,
+    images: OG_IMAGE,
+  },
+};
+
+# Create a Block
+
+Blocks are versatile visual components utilized to construct various elements on your [Job Ad](/job-ads) or [Company Profile](/company-profile).
+These blocks include:
+
+ - [Text Block](/creation/text-block)
+ - [Image Block](/creation/image-block)
+ - [Video Block](/creation/video-block)
+ - [Button Block](/creation/button-block)
+ - [Benefits Block](/creation/benefits-block)
+ - [Team Block](/creation/team-block)
+ - [Contact Person Block](/creation/contact-person-block)
+ - [Location Block](/creation/location-block)
+ - [Reusable Blocks](/creation/reusable-blocks)
+
+Each block serves a unique purpose and features a distinct appearance. They are designed with specific functionalities, offering a tailored scope for different content types. The flexibility of the VIDEOJOBS editor empowers you to easily create and customize your content using these blocks, providing a fully WYSIWYG (What You See Is What You Get) editing experience.
+
+To start creating a block, make sure you are in **Edit** mode. To create a block, click on the **Plus** button.
+
+<StyledDataCreateButton>
+  <Icon name="Plus" size={32} />
+</StyledDataCreateButton>
+
+Once you click the **Plus** button, you will see a list of available blocks. You can select the block you want to use, click on it and will block will be added to your content.
+
+<StyledDataDropdown>
+  <StyledDataDropdownItem>
+    <Link href="/creation/text-block">
+      <Icon name="Text" /> <span>Text</span>
+    </Link>
+  </StyledDataDropdownItem>
+  <StyledDataDropdownItem>
+    <Link href="/creation/image-block">
+      <Icon name="Image" /> <span>Image</span>
+    </Link>
+  </StyledDataDropdownItem>
+  <StyledDataDropdownItem>
+    <Link href="/creation/video-block">
+      <Icon name="Video" /> <span>Video</span>
+    </Link>
+  </StyledDataDropdownItem>
+  <StyledDataDropdownItem>
+    <Link href="/creation/button-block">
+      <Icon name="MousePointerClick" /> <span>Button</span>
+    </Link>
+  </StyledDataDropdownItem>
+  <StyledDataDropdownItem>
+    <Link href="/creation/benefits-block">
+      <Icon name="Sparkles" /> <span>Benefits</span>
+    </Link>
+  </StyledDataDropdownItem>
+  <StyledDataDropdownItem>
+    <Link href="/creation/team-block">
+      <Icon name="Users" /> <span>Team</span>
+    </Link>
+  </StyledDataDropdownItem>
+  <StyledDataDropdownItem>
+    <Link href="/creation/contact-person-block">
+      <Icon name="ContactRound" /> <span>Contact Person</span>
+    </Link>
+  </StyledDataDropdownItem>
+  <StyledDataDropdownItem>
+    <Link href="/creation/location-block">
+      <Icon name="MapPinned" /> <span>Location</span>
+    </Link>
+  </StyledDataDropdownItem>
+  <StyledDataDropdownItem>
+    <Link href="/creation/reusable-blocks">
+      <Icon name="Boxes" /> <span>Reusable Blocks</span>
+    </Link>
+  </StyledDataDropdownItem>
+</StyledDataDropdown>
+
+<Grid $xsCols={1} $lgCols={2}>
+  <Box $title="Text Block" $text="Learn more about Text Block, with all its features." href="/creation/text-block" />
+  <Box $title="Image Block" $text="Learn more about Image Block, with all its features." href="/creation/image-block" />
+</Grid>

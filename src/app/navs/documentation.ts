@@ -24,7 +24,7 @@ export const docsIntroNav = [
 export const docsJobCreationNav = [
   {
     title: "Create a Block",
-    url: "/creation/blocks",
+    url: "/creation",
     icon: "",
   },
   {
