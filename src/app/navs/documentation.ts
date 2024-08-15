@@ -23,8 +23,8 @@ export const docsIntroNav = [
 
 export const docsJobCreationNav = [
   {
-    title: "Create a Job Ad",
-    url: "/creation/create-job-ad",
+    title: "Create a Block",
+    url: "/creation/blocks",
     icon: "",
   },
   {

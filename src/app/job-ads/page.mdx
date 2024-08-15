@@ -1,8 +1,9 @@
 import { PAGE_DESCRIPTION, OG_IMAGE, TITLE } from "@/app/utils/constants";
-import { Grid, Space, Button } from "cherry-styled-components/src/lib";
+import { Grid, Space, Button, Flex } from "cherry-styled-components/src/lib";
 import { Box } from "@/app/components/box";
 import { LinkButton } from "@/app/components/link-button";
 import { Icon } from "@/app/components/icon-component";
+import { StyledDataArrowButton, StyledDataUserAvatar } from "@/app/components/data-components";
 
 export const metadata = {
   title: "Job Ads - " + TITLE,
@@ -15,12 +16,33 @@ export const metadata = {
 };
 
 # Job Ads 
-Once you have filled your company profile, you can start posting job ads instantly. There are two ways to create a job ad:
+Once you have filled your [Company Profile](/company-profile), you can start posting job ads instantly. There are two ways to create a job ad:
+
+<Flex $gap={20} $wrap="nowrap">
+  <StyledDataArrowButton
+    $isActive
+    title="Add Job"
+    aria-label="Add Job"
+  >
+   <StyledDataUserAvatar className="avatar">
+      <Icon name="Plus" />
+    </StyledDataUserAvatar>
+  </StyledDataArrowButton>
+  <Button $outline><Icon name="Plus" className="icon" />Add Job</Button>
+</Flex>  
 
 - Click the **Plus** button always visible on the page header.
 - Click the **Add Job** button from the Home page or the Company Profile.
 
+![Add Job](/4-job-ads/add-job.jpg)
+
+- Job Title - The title of the job ad, mandatory.
+- Job Location - The location of the job ad, mandatory.
+- Job Description - The description of the job ad, optional.
+
+Once you hit the **Add** button, you will be redirected to the Job Ad page. Here you can edit the job ad and add more informations about the position.
+
 <Grid $xsCols={1} $lgCols={2}>
-  <Box $title="Company Profile" $text="Learn more about your company profile." href="/company-profile" />
-  <Box $title="Job Ads" $text="Learn more about creating job ads, with all its features." href="/job-ads" />
+  <Box $title="Create a Block" $text="Learn more about Blocks, with all its features." href="/creation/blocks" />
+  <Box $title="Text Block" $text="Learn more about Text Block, with all its features." href="/creation/text-block" />
 </Grid>
