@@ -1,6 +1,7 @@
 "use client";
 import { resetButton, Theme } from "cherry-styled-components/src/lib";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { interactiveStyles } from "@/app/components/box";
 
 export const StyledDataArrowButton = styled.button<{ theme: Theme; $isActive: boolean }>`
   ${resetButton};
@@ -80,4 +81,61 @@ export const StyledDataUserAvatar = styled.span<{ theme: Theme }>`
     margin: auto;
     transition: none;
   }
+`;
+
+export const StyledDataDropdownButton = styled.button<{
+  theme: Theme;
+  $isActive?: boolean;
+  $dotted?: boolean;
+  $isAbsolute?: boolean;
+  $top?: number;
+  $right?: number;
+}>`
+  ${resetButton};
+  display: flex;
+  gap: 5px;
+  border-radius: ${({ theme }) => theme.spacing.radius.xs};
+  color: ${({ theme }) => theme.colors.primary};
+  background: ${({ theme }) => theme.colors.light};
+  margin: auto;
+  min-width: fit-content;
+
+  &.m-0 {
+    margin: 0;
+  }
+
+  ${interactiveStyles}
+
+  ${({ $isAbsolute }) =>
+    $isAbsolute &&
+    css`
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 98;
+    `}
+
+  ${({ $top }) =>
+    $top &&
+    css`
+      top: ${$top}px;
+    `}
+
+  ${({ $right }) =>
+    $right &&
+    css`
+      right: ${$right}px;
+    `}
+
+  ${({ $isActive, $dotted }) =>
+    $isActive &&
+    css`
+      border: solid 1px ${({ theme }) => ($dotted ? theme.colors.info : theme.colors.primary)};
+    `}
+
+  ${({ $dotted }) =>
+    $dotted &&
+    css`
+      border-style: dotted;
+    `};
 `;

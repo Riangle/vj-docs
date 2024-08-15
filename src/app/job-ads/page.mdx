@@ -3,7 +3,7 @@ import { Grid, Space, Button, Flex } from "cherry-styled-components/src/lib";
 import { Box } from "@/app/components/box";
 import { LinkButton } from "@/app/components/link-button";
 import { Icon } from "@/app/components/icon-component";
-import { StyledDataArrowButton, StyledDataUserAvatar } from "@/app/components/data-components";
+import { StyledDataArrowButton, StyledDataUserAvatar, StyledDataDropdownButton } from "@/app/components/data-components";
 
 export const metadata = {
   title: "Job Ads - " + TITLE,
@@ -29,7 +29,7 @@ Once you have filled your [Company Profile](/company-profile), you can start pos
     </StyledDataUserAvatar>
   </StyledDataArrowButton>
   <Button $outline><Icon name="Plus" className="icon" />Add Job</Button>
-</Flex>  
+</Flex>
 
 - Click the **Plus** button always visible on the page header.
 - Click the **Add Job** button from the Home page or the Company Profile.
@@ -41,6 +41,57 @@ Once you have filled your [Company Profile](/company-profile), you can start pos
 - Job Description - The description of the job ad, optional.
 
 Once you hit the **Add** button, you will be redirected to the Job Ad page. Here you can edit the job ad and add more informations about the position.
+
+## Editing
+
+You can edit the job ad by clicking the **Edit** button on the bottom right corner of the page, in the Action Bar.
+
+<Button $outline><Icon name="SquarePen" className="icon" />Edit</Button>
+
+If you are in Editing mode, a **Save** button will appear on the Action Bar at the bottom of the page. Clicking on this button will save the changes made to the job ad.
+
+<Button $outline><Icon name="Save" className="icon" />Save</Button>
+
+## Publish
+
+Once you have finished editing the job ad, you can publish it by clicking the **Publish** button on the Action Bar.
+
+<Button>Publish</Button>
+
+## Job Settings
+
+The job ad settings can be found on the Action Bar at the bottom left of the page.
+
+<StyledDataDropdownButton>
+  <Icon name="Settings" />
+</StyledDataDropdownButton>
+
+- Job URL - The URL of the job ad, mandatory.
+- Description - The description of the job ad, optional.
+- Status - The status of the job ad, draft or published.
+- Published Date - The date when the job ad was published.
+- Delete - Delete the job ad.
+
+ ## Cover Image
+ When in Edit mode you can add or modify the cover image. The cover image will be used as a preview image for the job ad. It will be visible on the Job Ad page.
+![Cover Image](/3-company-profile/cover.jpg)
+
+- Recommended size: 1440x360
+- Aspect ratio: 4:1
+
+ ## Job Ad Blocks
+
+ The Job Ads, same as the [Company Profile](/company-profile), can be personalized to your company's needs using the VIDEOJOBS Blocks.
+
+ - [Text Block](/creation/text-block)
+ - [Image Block](/creation/image-block)
+ - [Video Block](/creation/video-block)
+ - [Button Block](/creation/button-block)
+ - [Benefits Block](/creation/benefits-block)
+ - [Team Block](/creation/team-block)
+ - [Contact Person Block](/creation/contact-person-block)
+ - [Location Block](/creation/location-block)
+ - [Reusable Blocks](/creation/reusable-blocks)
 
 <Grid $xsCols={1} $lgCols={2}>
   <Box $title="Create a Block" $text="Learn more about Blocks, with all its features." href="/creation/blocks" />
