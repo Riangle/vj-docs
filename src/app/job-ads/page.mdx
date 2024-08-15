@@ -1,0 +1,26 @@
+import { PAGE_DESCRIPTION, OG_IMAGE, TITLE } from "@/app/utils/constants";
+import { Grid, Space, Button } from "cherry-styled-components/src/lib";
+import { Box } from "@/app/components/box";
+import { LinkButton } from "@/app/components/link-button";
+import { Icon } from "@/app/components/icon-component";
+
+export const metadata = {
+  title: "Job Ads - " + TITLE,
+  description: PAGE_DESCRIPTION,
+  openGraph: {
+    title: "Job Ads - " + TITLE,
+    description: PAGE_DESCRIPTION,
+    images: OG_IMAGE,
+  },
+};
+
+# Job Ads 
+Once you have filled your company profile, you can start posting job ads instantly. There are two ways to create a job ad:
+
+- Click the **Plus** button always visible on the page header.
+- Click the **Add Job** button from the Home page or the Company Profile.
+
+<Grid $xsCols={1} $lgCols={2}>
+  <Box $title="Company Profile" $text="Learn more about your company profile." href="/company-profile" />
+  <Box $title="Job Ads" $text="Learn more about creating job ads, with all its features." href="/job-ads" />
+</Grid>

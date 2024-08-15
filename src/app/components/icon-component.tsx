@@ -1,7 +1,6 @@
-"use client";
 import { icons } from "lucide-react";
 
-export type IconProps = keyof typeof icons;
+type IconProps = keyof typeof icons;
 
 interface Props {
   name: IconProps;
@@ -12,6 +11,8 @@ interface Props {
 
 const Icon = ({ name, color, size, className }: Props) => {
   const LucideIcon = icons[name];
+
+  if (!LucideIcon) return null;
 
   return <LucideIcon color={color} size={size} className={className} />;
 };
