@@ -15,4 +15,6 @@ const Icon = ({ name, color, size, className }: Props) => {
   return <LucideIcon color={color} size={size} className={className} />;
 };
 
+export default Icon;
+
 export { Icon };
