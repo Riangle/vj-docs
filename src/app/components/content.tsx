@@ -73,7 +73,7 @@ const StyledContent = styled.div<ContentProps>`
   & img {
     margin: 20px 0;
 
-    &:last-of-type {
+    &:not(button):last-of-type {
       margin-bottom: 0;
     }
   }
@@ -97,7 +97,7 @@ const StyledContent = styled.div<ContentProps>`
 
   & img {
     max-width: 100%;
-    border-radius: ${({ theme }) => theme.spacing.radius.lg};
+    border-radius: ${({ theme }) => theme.spacing.radius.xs};
     box-shadow: ${({ theme }) => theme.shadows.lg};
     transition: all 0.3s ease;
   }

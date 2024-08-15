@@ -2,6 +2,7 @@ import { PAGE_DESCRIPTION, OG_IMAGE, TITLE } from "@/app/utils/constants";
 import { Grid, Space } from "cherry-styled-components/src/lib";
 import { Box } from "@/app/components/box";
 import { LinkButton } from "@/app/components/link-button";
+import { Icon } from "@/app/components/icon";
 
 export const metadata = {
   title: "Create an Account - " + TITLE,
@@ -22,35 +23,36 @@ https://www.videojobs.io/register
 
 To get started, please go to the [VIDEOJOBS](https://www.videojobs.io) home and click on the **Sign Up** in the top right corner. Or follow the link below:
 
-<LinkButton href="https://www.videojobs.io/register" target="_blank">Sign Up</LinkButton>
+<LinkButton href="https://www.videojobs.io/register" target="_blank">Sign Up <Icon name="ExternalLink" /></LinkButton>
 
-## Sign Up
+## Sign Up Methods
 There are two ways to sign up for an account: using your email address or your social media account.
 If you have an account with LinkedIn or Google, you can sign in to your account using the same service.
-![Sign Up](/register.jpg)
+![Sign Up](/2-account/register.jpg)
 
 ## Email Confirmation
 If you have signed up using your email address, you will receive an email confirmation. Click on the link in the email to confirm your email address and activate your account.
-![Email Confirmation](/email-confirmation.jpg)
+![Email Confirmation](/2-account/email-confirmation.jpg)
 
 ### Outlook and Office 365 Safe Links
 Safe Links in Outlook and Office 365 blocks certain links as a security measure to protect against phishing and malicious content. To proceed, please copy and paste the link from the email into your browser to activate your account.
 
 # Complete your account
 Once you log in, you will be redirected to the account page. Here you can complete your account by adding your personal information. Then you need to create a company profile.
-![Account Page](/account.jpg)
+![Account Page](/2-account/account.jpg)
 
 - Add a profile picture.
 - Type your full name.
 
 # Company Information
 In the following example we will create a new company. However you can also join an existing company as a member with publishing rights, to read more about this, please visit [Team Accounts](/integrations/team-accounts).
-![Create Company](/create-company.jpg)
+![Create Company](/2-account/create-company.jpg)
 - Type a company name and click on the **Create** button.
 
 The user that created the company profile will be automatically assigned as the super admin. The super admin can manage additional [Team Accounts](/integrations/team-accounts) and allow other users to join the company as members.
 
-![Company Fields](/company-fields.jpg)
+## Company Fields
+- Upload a company profile image.
 - Enter the Company Page URL. This will serve as the web address for accessing the company’s profile (e.g. my-company-name).
 - Add the company website. Make sure to add the full URL including the protocol (e.g. https://www.videojobs.io).
 - Add the Location. This is the head quarter of the company.

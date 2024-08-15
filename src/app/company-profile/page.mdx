@@ -1,6 +1,7 @@
 import { PAGE_DESCRIPTION, OG_IMAGE, TITLE } from "@/app/utils/constants";
-import { Grid, Space } from "cherry-styled-components/src/lib";
+import { Grid, Space, Button } from "cherry-styled-components/src/lib";
 import { Box } from "@/app/components/box";
+import { Icon } from "@/app/components/icon";
 import { LinkButton } from "@/app/components/link-button";
 
 export const metadata = {
@@ -21,8 +22,8 @@ https://www.videojobs.io/company-page-url
 ```
 
 The company profile can be used as a canvas to showcase your company’s culture, values, and mission. It shows the collection of job ads that are posted by the company.
-![Company Profile](/company-profile.jpg)
 
+## Predefined Information
 The following information can be changed from the [Account](/account/account-page) page:
 
  - Company Profile Image
@@ -34,7 +35,22 @@ The following information can be changed from the [Account](/account/account-pag
  - Bio
  - Mission
 
+![Company Profile](/3-company-profile/company.jpg)
+![Company Profile](/3-company-profile/team-location-categories.jpg)
+![Company Profile](/3-company-profile/mission.jpg)
+![Company Profile](/3-company-profile/bio.jpg)
+
+## Create a Job Ad
+To create a job ad, click on the **Add Job** button on the Jobs Block.
+
+<Button $outline><Icon name="Plus" className="icon" />Add Job</Button>
+
+## Editing 
+
  You can edit the Company Profile by clicking the **Edit** button on the bottom right corner of the page.
+ 
+ <Button $outline><Icon name="SquarePen" className="icon" />Edit</Button>
+
  The Company Profile, same as the Job Ads, can be personalized to your company's needs using the VIDEOJOBS Blocks.
 
  - [Text Block](/creation/text-block)
