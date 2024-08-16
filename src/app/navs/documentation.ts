@@ -77,12 +77,17 @@ export const docsJobCreationNav = [
 
 export const docsIntegrationsNav = [
   {
+    title: "Integrations",
+    url: "/integrations",
+    icon: "",
+  },
+  {
     title: "Embed on Job Boards",
     url: "/integrations/embed-on-job-boards",
     icon: "",
   },
   {
-    title: "Embed open positions",
+    title: "Embed Open Positions",
     url: "/integrations/embed-open-positions",
     icon: "",
   },
@@ -97,7 +102,7 @@ export const docsIntegrationsNav = [
 export const docsAccountManagementNav = [
   {
     title: "Account",
-    url: "/account/account-page",
+    url: "/account",
     icon: "",
   },
   {
