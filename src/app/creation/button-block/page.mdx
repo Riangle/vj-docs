@@ -1,6 +1,8 @@
 import { TITLE, PAGE_DESCRIPTION, OG_IMAGE } from "@/app/utils/constants";
-import { Grid, Space } from "cherry-styled-components/src/lib";
+import { Grid, Space, Flex, MaxWidth } from "cherry-styled-components/src/lib";
 import { Box } from "@/app/components/box";
+import { StyledDataDropdownButton } from "@/app/components/data-components";
+import { Icon } from "@/app/components/icon-component";
 
 export const metadata = {
   title: "Button Block - " + TITLE,
@@ -13,7 +15,40 @@ export const metadata = {
 };
 
 # Button Block 
-Laborum non excepteur consectetur magna ut duis officia esse. In adipisicing anim nulla magna proident sit veniam. Nostrud eiusmod ad dolore fugiat. Nulla consequat labore labore ipsum sit esse adipisicing exercitation commodo ullamco sint ipsum consectetur. Irure id et ad. Mollit fugiat occaecat reprehenderit labore duis.
+The Button Block is a visually distinct element, similar to the Video Block, designed to capture attention. This block allows you to add a button that links to a specified destination, typically a form for candidates to fill out.
+
+All blocks, including Button Blocks, can be visually rearranged using a simple drag-and-drop interface. This allows for easy organization and customization of your content layout.
+
+<StyledDataDropdownButton>
+  <Icon name="Move" />
+</StyledDataDropdownButton>
+
+## Analytics Tracking
+
+Each click on the button is tracked, providing you with insights into how many people have applied or interacted with the button.
+
+## Block Options
+
+Each block comes with a set of features accessible through the three-dot icon located in the top right corner. This icon is visible when the block is in Edit mode, among other scenarios.
+
+<StyledDataDropdownButton>
+  <Icon name="EllipsisVertical" />
+</StyledDataDropdownButton>
+
+## Available Options
+
+Within the block’s options menu, you can:
+
+- Link to a form or an external website.
+- Toggle between left, center, and right alignment.
+- Toggle between half-width or full-width block.
+- Move the block up.
+- Move the block down.
+- Delete the block if it's no longer needed.
+
+<MaxWidth $size={200} className="mb-0">
+![Button Block Options](/9-button-block/options.jpg)
+</MaxWidth>
 
 <Space $xs="none" $lg={20} />
 
