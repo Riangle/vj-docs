@@ -111,6 +111,10 @@ const StyledContent = styled.div<ContentProps>`
       }
     }
   }
+
+  & .mb-0 {
+    margin: 0;
+  }
 `;
 
 function Content({ children }: ContentProps) {
