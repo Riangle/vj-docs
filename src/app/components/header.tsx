@@ -7,7 +7,7 @@ import { rgba } from "polished";
 import { Theme } from "cherry-styled-components/src/lib";
 import { ThemeContext } from "@/app/components/theme-provider";
 import { Search } from "@/app/components/search";
-import { IconGitHub, IconMoon, IconSun } from "@/app/components/icons";
+import { IconMoon, IconSun } from "@/app/components/icons";
 import { Logo } from "@/app/components/logo";
 import { theme as themeLight, themeDark } from "@/app/theme";
 import { StyledDataTag } from "@/app/components/styled-data";
@@ -177,6 +177,7 @@ function Header() {
               <Logo className="logo" /> <StyledDataTag className="tag">DOCS</StyledDataTag>
             </StyledLink>
             <StyledNav>
+              <Search />
               <StyledLink href="https://videojobs.io" aria-label="VIDEOJOBS Home">
                 Home
               </StyledLink>

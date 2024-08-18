@@ -4,7 +4,7 @@ import "@docsearch/css";
 
 function Search() {
   return (
-    <DocSearch appId="KETBUPPLSS" indexName="cherry" apiKey="9e5d9817ccd10d9dd9728696b2abf1eb" />
+    <DocSearch appId="W7GZIJYJAG" indexName="videojobs" apiKey="6ebaa5dd44ce769260e0be237756bc38" />
   );
 }
 
