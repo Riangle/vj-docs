@@ -1,6 +1,7 @@
 import { TITLE, PAGE_DESCRIPTION, OG_IMAGE } from "@/app/utils/constants";
-import { Grid, Space } from "cherry-styled-components/src/lib";
+import { Grid, Space, Button } from "cherry-styled-components/src/lib";
 import { Box } from "@/app/components/box";
+import { Icon } from "@/app/components/icon-component";
 
 export const metadata = {
   title: "Embed on Job Boards - " + TITLE,
@@ -13,7 +14,22 @@ export const metadata = {
 };
 
 # Embed on Job Boards 
-Laborum non excepteur consectetur magna ut duis officia esse. In adipisicing anim nulla magna proident sit veniam. Nostrud eiusmod ad dolore fugiat. Nulla consequat labore labore ipsum sit esse adipisicing exercitation commodo ullamco sint ipsum consectetur. Irure id et ad. Mollit fugiat occaecat reprehenderit labore duis.
+All Job Ads on our platform can be shared or embedded on any website. However, depending on the job board where you want to publish the ad, you may need to confirm whether the job board supports embedding iframes.
+
+<Button><Icon name="Share" className="icon" />Share</Button>
+
+## How to Integrate a Job Ad
+To integrate a Job Ad:
+
+1. Navigate to the desired Job Ad.
+2. Click the "Share" button located in the top right corner.
+3. You will then see an interface that provides you with sharing options, including an embed code.
+
+![Share Job Ad](/16-embed-job-boards/modal.jpg)
+
+- Direct Link: This option removes the VIDEOJOBS header and footer, allowing the shared link to focus solely on the job ad content.
+- Embed Job Ad: This provides the code necessary to embed the Job Ad on any website.
+- Custom Theme: You can enforce a specific theme, either light or dark, to match the design of your website or platform.
 
 <Space $xs="none" $lg={20} />
 

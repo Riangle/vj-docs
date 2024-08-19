@@ -1,6 +1,8 @@
 import { TITLE, PAGE_DESCRIPTION, OG_IMAGE } from "@/app/utils/constants";
-import { Grid, Space } from "cherry-styled-components/src/lib";
+import { Grid, Space, MaxWidth } from "cherry-styled-components/src/lib";
 import { Box } from "@/app/components/box";
+import { StyledDataCreateButton, StyledDataDropdown, StyledDataDropdownItem } from "@/app/components/data-components";
+import { Icon } from "@/app/components/icon-component";
 
 export const metadata = {
   title: "Embed Image Blocks - " + TITLE,
@@ -12,8 +14,32 @@ export const metadata = {
   },
 };
 
-# Embed Image Blocks
-Laborum non excepteur consectetur magna ut duis officia esse. In adipisicing anim nulla magna proident sit veniam. Nostrud eiusmod ad dolore fugiat. Nulla consequat labore labore ipsum sit esse adipisicing exercitation commodo ullamco sint ipsum consectetur. Irure id et ad. Mollit fugiat occaecat reprehenderit labore duis.
+# Embed Image Blocks 
+Each Image Block can be shared and embedded independently wherever it is posted. You can easily integrate your gallery of images into your website or share it on social media.
+
+![Share Image Block](/19-embed-image-blocks/share-image.jpg)
+
+## How to Integrate a Image Block
+To integrate a Image Block:
+
+1. Navigate to the desired Image Block.
+2. Click the "Share" button located in the top right corner.
+3. An interface will appear, providing you with sharing options, including an embed code.
+
+<MaxWidth $size={200} className="mb-0">
+  <StyledDataDropdown>
+    <StyledDataDropdownItem>
+      <button>
+        <Icon name="Share" /> <span>Share</span>
+      </button>
+    </StyledDataDropdownItem>
+  </StyledDataDropdown>
+</MaxWidth>
+
+![Share Video Block](/19-embed-image-blocks/modal.jpg)
+
+- Direct Link: This option will give you a direct link to the video.
+- Embed Video: This provides the code necessary to embed the chosen video on any website.
 
 <Space $xs="none" $lg={20} />
 

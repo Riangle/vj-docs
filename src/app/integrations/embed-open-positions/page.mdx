@@ -1,6 +1,8 @@
 import { TITLE, PAGE_DESCRIPTION, OG_IMAGE } from "@/app/utils/constants";
-import { Grid, Space } from "cherry-styled-components/src/lib";
+import { Grid, Space, MaxWidth } from "cherry-styled-components/src/lib";
 import { Box } from "@/app/components/box";
+import { StyledDataCreateButton, StyledDataDropdown, StyledDataDropdownItem } from "@/app/components/data-components";
+import { Icon } from "@/app/components/icon-component";
 
 export const metadata = {
   title: "Embed Open Positions - " + TITLE,
@@ -13,7 +15,33 @@ export const metadata = {
 };
 
 # Embed Open Positions 
-Laborum non excepteur consectetur magna ut duis officia esse. In adipisicing anim nulla magna proident sit veniam. Nostrud eiusmod ad dolore fugiat. Nulla consequat labore labore ipsum sit esse adipisicing exercitation commodo ullamco sint ipsum consectetur. Irure id et ad. Mollit fugiat occaecat reprehenderit labore duis.
+You can easily share all your open positions on any website or social media platform. To do this, navigate to your Home Page or Company Profile, and click on the three-dot icon located in the top right corner of the Jobs block.
+
+![Share Open Positions](/17-embed-open-positions/share-jobs.jpg)
+
+## How to Itegrate a Open Position
+To integrate your open positions:
+
+1. Navigate to the Home Page or Company Profile.
+2. Click the "Share" button located in the top right corner of the Jobs block.
+3. You will then see an interface that provides you with sharing options, including an embed code.
+
+<MaxWidth $size={200} className="mb-0">
+  <StyledDataDropdown>
+    <StyledDataDropdownItem>
+      <button>
+        <Icon name="Share" /> <span>Share</span>
+      </button>
+    </StyledDataDropdownItem>
+  </StyledDataDropdown>
+</MaxWidth>
+
+![Share Open Positions](/17-embed-open-positions/modal.jpg)
+
+- Direct Link: This option removes the VIDEOJOBS header and footer, allowing the shared only the open positions.
+- Embed Open Jobs: This provides the code necessary to embed all open positions on any website.
+- Custom Theme: You can enforce a specific theme, either light or dark, to match the design of your website or platform.
+- Monochrome: This option removes all VIDEOJOBS branding colors, presenting the open positions in a more neutral manner.
 
 <Space $xs="none" $lg={20} />
 
