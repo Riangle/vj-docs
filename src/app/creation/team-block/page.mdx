@@ -1,6 +1,8 @@
 import { TITLE, PAGE_DESCRIPTION, OG_IMAGE } from "@/app/utils/constants";
-import { Grid, Space } from "cherry-styled-components/src/lib";
+import { Grid, Space, Flex, MaxWidth } from "cherry-styled-components/src/lib";
 import { Box } from "@/app/components/box";
+import { StyledDataDropdownButton } from "@/app/components/data-components";
+import { Icon } from "@/app/components/icon-component";
 
 export const metadata = {
   title: "Team Block - " + TITLE,
@@ -13,7 +15,35 @@ export const metadata = {
 };
 
 # Team Block 
-Laborum non excepteur consectetur magna ut duis officia esse. In adipisicing anim nulla magna proident sit veniam. Nostrud eiusmod ad dolore fugiat. Nulla consequat labore labore ipsum sit esse adipisicing exercitation commodo ullamco sint ipsum consectetur. Irure id et ad. Mollit fugiat occaecat reprehenderit labore duis.
+The Team Block is an element designed to showcase your team members. You can add as many team members as you'd like, with each member featuring a profile picture, name, and title.
+
+All blocks, including Team Block, can be visually rearranged using a simple drag-and-drop interface. This allows for easy organization and customization of your content layout.
+
+<StyledDataDropdownButton>
+  <Icon name="Move" />
+</StyledDataDropdownButton>
+
+## Block Options
+
+Each block comes with a set of features accessible through the three-dot icon located in the top right corner. This icon is visible when the block is in Edit mode, among other scenarios.
+
+<StyledDataDropdownButton>
+  <Icon name="EllipsisVertical" />
+</StyledDataDropdownButton>
+
+## Available Options
+
+Within the block’s options menu, you can:
+
+- Toggle between half-width or full-width block.
+- Move the block up.
+- Move the block down.
+- Make the block reusable for future use.
+- Delete the block if it's no longer needed.
+
+<MaxWidth $size={200} className="mb-0">
+![Button Block Options](/6-text-block/options.jpg)
+</MaxWidth>
 
 <Space $xs="none" $lg={20} />
 
