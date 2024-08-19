@@ -115,6 +115,13 @@ const StyledContent = styled.div<ContentProps>`
   & .mb-0 {
     margin: 0;
   }
+
+  .m-0 {
+    & a,
+    & button {
+      margin: 0;
+    }
+  }
 `;
 
 function Content({ children }: ContentProps) {
