@@ -1,6 +1,7 @@
 import { TITLE, PAGE_DESCRIPTION, OG_IMAGE } from "@/app/utils/constants";
 import { Grid, Space } from "cherry-styled-components/src/lib";
 import { Box } from "@/app/components/box";
+import { LinkButton } from "@/app/components/link-button";
 
 export const metadata = {
   title: "Billing - " + TITLE,
@@ -13,7 +14,15 @@ export const metadata = {
 };
 
 # Billing 
-Laborum non excepteur consectetur magna ut duis officia esse. In adipisicing anim nulla magna proident sit veniam. Nostrud eiusmod ad dolore fugiat. Nulla consequat labore labore ipsum sit esse adipisicing exercitation commodo ullamco sint ipsum consectetur. Irure id et ad. Mollit fugiat occaecat reprehenderit labore duis.
+You can access the Billing page by navigating to the header menu and selecting "Subscription" On this page, you can view and manage your active subscription. Our billing is handled through Stripe, so you will be redirected to their portal for payment processing and account management.
+
+```
+https://www.videojobs.io/account/subscription
+```
+
+<Space $size={20} />
+
+<LinkButton href="https://www.videojobs.io/account/subscription" target="_blank">Subscription</LinkButton>
 
 <Space $xs="none" $lg={20} />
 
