@@ -16,28 +16,15 @@ export const metadata = {
 
 # Reusable Blocks 
 A Reusable Block can be any type of block, such as a gallery, video, or any other block you'd like to use multiple times. To make a block reusable, select the option from the Block Options Menu. You can then add this reusable block from the list whenever needed.
-
-## Managing Reusable Blocks
-Deleting a block that is created using the Reusable Blocks will not remove the associated media unless you choose to delete the entire Reusable Block from the creation modal. If you do, all related media will be permanently deleted.
 ![Reusable Block](/14-reusable-block/modal.svg)
 
-All blocks, including Reusable Blocks, can be visually rearranged using a simple drag-and-drop interface. This allows for easy organization and customization of your content layout.
+To delete a Reusable Block, click the Trash icon on the desired block. This will permanently delete the block along with any associated media. If this block was part of a content block, the media linked to it will be broken upon deletion.
 
 <StyledDataDropdownButton>
-  <Icon name="Move" />
+  <Icon name="Trash2" />
 </StyledDataDropdownButton>
 
-## Block Options
-
-Each block comes with a set of features accessible through the three-dot icon located in the top right corner. This icon is visible when the block is in Edit mode, among other scenarios.
-
-<StyledDataDropdownButton>
-  <Icon name="EllipsisVertical" />
-</StyledDataDropdownButton>
-
-## Available Options
-
-Depending on the block type, the options menu will vary. For example, the Location Block has a slider to adjust the map zoom level. 
+Once a Reusable Block is inserted into your content, it behaves like any other block. However, unlike regular blocks, the media associated with a Reusable Block does not get deleted when the block is removed from the content. To delete the associated media, you must delete the block from the Reusable Blocks Modal, as demonstrated in the example above.
 
 <Space $xs="none" $lg={20} />
 
