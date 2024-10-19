@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@docsearch/react": "^3.6.2",
-    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/loader": "^3.1.0",
     "@next/mdx": "^14.2.15",
     "@types/node": "^22",
     "@types/react": "^18",
