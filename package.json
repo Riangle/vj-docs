@@ -24,25 +24,25 @@
     "format": "prettier --write \"./src/**/*.{js,json,ts,tsx}\" \"!.node_modules/**\""
   },
   "dependencies": {
-    "next": "15.1.5",
+    "next": "15.1.7",
     "react": "^19",
     "react-dom": "^19"
   },
   "devDependencies": {
-    "@docsearch/react": "^3.8.2",
+    "@docsearch/react": "^3.8.3",
     "@mdx-js/loader": "^3.1.0",
-    "@next/mdx": "^15.1.5",
+    "@next/mdx": "^15.1.7",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "cherry-styled-components": "^0.1.0-42",
-    "eslint-config-next": "^15.1.5",
-    "lucide-react": "^0.473.0",
+    "cherry-styled-components": "^0.1.0-43",
+    "eslint-config-next": "^15.1.7",
+    "lucide-react": "^0.475.0",
     "polished": "^4.3.1",
-    "posthog-js": "^1.207.0",
-    "prettier": "^3.4.2",
-    "rehype-highlight": "^7.0.1",
-    "styled-components": "^6.1.14",
+    "posthog-js": "^1.218.1",
+    "prettier": "^3.5.1",
+    "rehype-highlight": "^7.0.2",
+    "styled-components": "^6.1.15",
     "typescript": "^5"
   }
 }
