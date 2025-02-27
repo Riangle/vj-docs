@@ -24,23 +24,23 @@
     "format": "prettier --write \"./src/**/*.{js,json,ts,tsx}\" \"!.node_modules/**\""
   },
   "dependencies": {
-    "next": "15.1.7",
+    "next": "15.2.0",
     "react": "^19",
     "react-dom": "^19"
   },
   "devDependencies": {
-    "@docsearch/react": "^3.8.3",
+    "@docsearch/react": "^3.9.0",
     "@mdx-js/loader": "^3.1.0",
-    "@next/mdx": "^15.1.7",
+    "@next/mdx": "^15.2.0",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "cherry-styled-components": "^0.1.0-43",
-    "eslint-config-next": "^15.1.7",
-    "lucide-react": "^0.475.0",
+    "eslint-config-next": "^15.2.0",
+    "lucide-react": "^0.476.0",
     "polished": "^4.3.1",
-    "posthog-js": "^1.219.4",
-    "prettier": "^3.5.1",
+    "posthog-js": "^1.224.0",
+    "prettier": "^3.5.2",
     "rehype-highlight": "^7.0.2",
     "styled-components": "^6.1.15",
     "typescript": "^5"
