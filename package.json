@@ -37,7 +37,7 @@
     "@types/react-dom": "^19",
     "cherry-styled-components": "^0.1.0-43",
     "eslint-config-next": "^15.2.4",
-    "lucide-react": "^0.484.0",
+    "lucide-react": "^0.485.0",
     "polished": "^4.3.1",
     "posthog-js": "^1.234.1",
     "prettier": "^3.5.3",
