@@ -39,7 +39,7 @@
     "eslint-config-next": "^15.3.3",
     "lucide-react": "^0.513.0",
     "polished": "^4.3.1",
-    "posthog-js": "^1.249.3",
+    "posthog-js": "^1.249.4",
     "prettier": "^3.5.3",
     "rehype-highlight": "^7.0.2",
     "styled-components": "^6.1.18",
