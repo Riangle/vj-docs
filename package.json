@@ -37,10 +37,10 @@
     "@types/react-dom": "^19",
     "cherry-styled-components": "^0.1.0-43",
     "eslint-config-next": "^15.3.4",
-    "lucide-react": "^0.523.0",
+    "lucide-react": "^0.525.0",
     "polished": "^4.3.1",
-    "posthog-js": "^1.255.1",
-    "prettier": "^3.6.1",
+    "posthog-js": "^1.256.0",
+    "prettier": "^3.6.2",
     "rehype-highlight": "^7.0.2",
     "styled-components": "^6.1.19",
     "typescript": "^5"
