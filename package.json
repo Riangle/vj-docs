@@ -24,19 +24,19 @@
     "format": "prettier --write \"./src/**/*.{js,json,ts,tsx}\" \"!.node_modules/**\""
   },
   "dependencies": {
-    "next": "15.4.1",
+    "next": "15.4.2",
     "react": "^19",
     "react-dom": "^19"
   },
   "devDependencies": {
     "@docsearch/react": "^3.9.0",
     "@mdx-js/loader": "^3.1.0",
-    "@next/mdx": "^15.4.1",
+    "@next/mdx": "^15.4.2",
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "cherry-styled-components": "^0.1.0-43",
-    "eslint-config-next": "^15.4.1",
+    "eslint-config-next": "^15.4.2",
     "lucide-react": "^0.525.0",
     "polished": "^4.3.1",
     "posthog-js": "^1.257.0",
