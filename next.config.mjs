@@ -1,10 +1,9 @@
-import rehypeHighlight from "rehype-highlight";
 import nextMdx from "@next/mdx";
 
 const withMdx = nextMdx({
   extension: /\.mdx?$/,
   options: {
-    rehypePlugins: [rehypeHighlight],
+    rehypePlugins: ["rehype-highlight"],
   },
 });
 
@@ -13,7 +12,7 @@ const nextConfig = withMdx({
   compiler: {
     styledComponents: true,
   },
-  transpilePackages: ["lucide-react"],
+  transpilePackages: ["lucide-react", "cherry-styled-components"],
   pageExtensions: ["md", "mdx", "tsx", "ts", "jsx", "js"],
 });
 
