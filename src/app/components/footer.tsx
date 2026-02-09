@@ -44,8 +44,8 @@ function DocsFooter() {
       <Grid $xsCols={1} $lgCols={3}>
         <Col $lgSpan={2}>
           <StyledParagraph>
-            Copyright © {year} <StyledLink href="https://www.videojobs.io">{TITLE}</StyledLink>.
-            All rights reserved.
+            Copyright © {year} <StyledLink href="https://www.videojobs.io">{TITLE}</StyledLink>. All
+            rights reserved.
           </StyledParagraph>
         </Col>
         <StyledLink
